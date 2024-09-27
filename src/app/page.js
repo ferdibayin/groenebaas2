@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import Intro from '../components/Intro';
 import Description from '../components/Description';
 import Lenis from "lenis";
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
     <Intro />
     <Description />
     <Section />
+    <Footer />
     <div className='h-screen'></div>
    </main>
   );

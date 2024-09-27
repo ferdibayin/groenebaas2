@@ -1,0 +1,42 @@
+/* YourStyles.module.css */
+
+.footer {
+    background-color: #f8f9fa; /* Lichte achtergrondkleur */
+    padding: 20px 0; /* Ruimte boven en onder */
+    text-align: center; /* Centreert de tekst */
+}
+
+.container {
+    max-width: 1200px; /* Maximale breedte voor de container */
+    margin: 0 auto; /* Centreert de container */
+    padding: 0 15px; /* Ruimte aan de zijkanten */
+}
+
+.socialMedia {
+    display: flex; /* Flexbox voor een horizontale uitlijning */
+    justify-content: center; /* Centreert de items */
+    margin-bottom: 15px; /* Ruimte onder de sociale media sectie */
+}
+
+.socialMedia a {
+    margin: 0 10px; /* Ruimte tussen de iconen */
+}
+
+.contactInfo {
+    margin-bottom: 15px; /* Ruimte onder de contactinformatie */
+}
+
+.address, .phone, .email {
+    margin: 5px 0; /* Ruimte tussen de contactregels */
+    font-size: 14px; /* Kleinere tekstgrootte */
+}
+
+.footerBottom {
+    border-top: 1px solid #dee2e6; /* Scheidingslijn boven */
+    padding-top: 10px; /* Ruimte boven de copyright tekst */
+}
+
+.copy {
+    font-size: 12px; /* Nog kleinere tekstgrootte */
+    color: #6c757d; /* Donkergrijze kleur */
+}
