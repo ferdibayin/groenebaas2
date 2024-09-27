@@ -2,11 +2,10 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import Section from '../components/Section';
-import Intro from '../components/Intro';
+import Intro from '../components/Carousel/Intro';
 import Description from '../components/Description';
 import Lenis from "lenis";
 import Footer from '../components/Footer';
-
 
 export default function Home() {
 

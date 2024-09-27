@@ -1,0 +1,30 @@
+.embla {
+    margin: auto;
+    // --slide-height: 19rem;
+    // --slide-spacing: 1rem;
+    // --slide-size: 100%;
+}
+
+.embla__viewport {
+    overflow: hidden;
+    border-style: solid;
+    margin-top: 40px;
+ 
+  }
+  .embla__container {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+ 
+
+
