@@ -1,11 +1,11 @@
 'use client';
 import Image from "next/image";
 import { useEffect } from "react";
-import Section from '../components/Section';
 import Intro from '../components/Carousel/Intro';
-import Description from '../components/Description';
+import Boxes from '../components/Redirectboxes';
 import Lenis from "lenis";
 import Footer from '../components/Footer';
+import Nieuws from '../components/Nieuws';
 
 export default function Home() {
 
@@ -23,8 +23,8 @@ export default function Home() {
   return (
    <main>
     <Intro />
-    <Description />
-    <Section />
+    <Boxes />
+    <Nieuws />
     <Footer />
     <div className='h-screen'></div>
    </main>
