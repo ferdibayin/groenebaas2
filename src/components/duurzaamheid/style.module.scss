@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Ruimte tussen kaarten en header */
+    align-items: flex-start; /* Zorg dat ze bovenaan uitlijnen */
+    gap: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+  
+    background-image: url('../../../public/images/bgdz.png');
+    background-size: cover; /* Zorg dat de afbeelding de hele container vult */
+    background-position: center; /* Centreer de afbeelding */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    height: 500px; /* Standaard vaste hoogte */
+    min-height: 500px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+    gap: 20px; /* Ruimte tussen de kaarten */
+    width: 50%; /* Cards nemen 50% van de breedte */
+  }
+  
+  .card {
+    display: flex; /* Zet icoon en tekst naast elkaar */
+    align-items: center; /* Centreer icoon en tekst verticaal */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 36px;
+    color: #f1b400;
+    margin-right: 20px; /* Ruimte tussen het icoon en de tekst */
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column; /* Stapelt titel en beschrijving */
+  }
+  
+  .card-text h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .header {
+    width: 45%; /* Header neemt 45% van de breedte */
+    text-align: left;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .button {
+    background-color: #f1b400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #d79b00;
+  }
+  
+  /* Tablet (max breedte 768px) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stapelt de secties */
+      gap: 20px; /* Minder ruimte tussen kaarten en header */
+      height: auto; /* Past de hoogte automatisch aan */
+      padding: 10px; /* Minder padding */
+    }
+  
+    .cards {
+      width: 100%; /* Cards nemen volledige breedte */
+      grid-template-columns: 1fr; /* Eén kolom */
+    }
+  
+    .header {
+      width: 100%; /* Header neemt volledige breedte */
+      text-align: center; /* Centreer de tekst */
+    }
+  
+    .header h2 {
+      font-size: 20px; /* Kleinere koptekst */
+    }
+  
+    .header p {
+      font-size: 14px; /* Kleinere tekst */
+    }
+  }
+  
+  /* Mobiel (max breedte 480px) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px; /* Nog minder padding */
+    }
+  
+    .card {
+      flex-direction: column; /* Stapel iconen en tekst verticaal */
+      text-align: center; /* Centreer alles */
+    }
+  
+    .icon {
+      margin-right: 0; /* Geen zijmarge meer */
+      margin-bottom: 10px; /* Ruimte tussen icoon en tekst */
+    }
+  
+    .card-text h3 {
+      font-size: 18px; /* Kleinere titel */
+    }
+  
+    .card-text p {
+      font-size: 12px; /* Kleinere tekst */
+    }
+  
+    .button {
+      font-size: 14px; /* Kleinere knoptekst */
+      padding: 8px 15px; /* Kleinere knopafmetingen */
+    }
+  }
+  
