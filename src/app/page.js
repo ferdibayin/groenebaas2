@@ -6,6 +6,7 @@ import Lenis from "lenis";
 import Footer from '../components/Footer';
 import Duurzaamheid from '../components/duurzaamheid';
 import Verhaal from '../components/Verhaal';
+import Bedrijf from "../components/Bedrijven";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
     <Intro />
     <Duurzaamheid />
     <Verhaal />
+    <Bedrijf />
     <Footer />
     <div className='h-screen'></div>
    </main>

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center; // Centraal uitlijnen
+    align-items: center; // Verticaal uitlijnen
+    background-color: white; // Witte achtergrond
+    height: 200px; // Pas de hoogte hier aan
+    gap: 10%; // Ruimte tussen de afbeeldingen
+
+    img {
+        width: 12%; // Breedte van de afbeeldingen
+        height: auto; // Behoud de verhoudingen van de afbeeldingen
+    }
+
+    // Media queries voor responsiviteit
+    @media (max-width: 1024px) { // Tablets
+        gap: 5%; // Verminder de ruimte tussen afbeeldingen
+        img {
+            width: 15%; // Maak de afbeeldingen iets groter
+        }
+    }
+
+    @media (max-width: 768px) { // Kleine tablets/mobiele apparaten
+        flex-wrap: wrap; // Zorg dat de afbeeldingen op een nieuwe regel komen indien nodig
+        gap: 20px; // Gebruik een vaste ruimte tussen afbeeldingen
+        img {
+            width: 30%; // Maak de afbeeldingen groter
+        }
+    }
+
+    @media (max-width: 480px) { // Mobiele telefoons
+        flex-direction: column; // Stapel de afbeeldingen verticaal
+        align-items: center; // Centreer de afbeeldingen
+        gap: 15px; // Ruimte tussen verticale afbeeldingen
+        img {
+            width: 80%; // Laat de afbeeldingen bijna de volledige breedte innemen
+        }
+    }
+}
