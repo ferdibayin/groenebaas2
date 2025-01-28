@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Duurzaamheid from '../components/duurzaamheid';
 import Verhaal from '../components/Verhaal';
 import Bedrijf from "../components/Bedrijven";
+import Waaromk from "../components/WaaromK";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
     <Duurzaamheid />
     <Verhaal />
     <Bedrijf />
+    <Waaromk />
     <Footer />
     <div className='h-screen'></div>
    </main>
