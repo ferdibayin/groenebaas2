@@ -1,0 +1,24 @@
+.container {
+    // height: auto;
+    background-image: url(../../../public/images/offerte/1.png);
+}
+
+.Card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.button {
+    background-color: #f1b400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #d79b00;
+  }
