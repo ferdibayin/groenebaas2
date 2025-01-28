@@ -4,7 +4,7 @@
     align-items: flex-start; /* Zorg dat ze bovenaan uitlijnen */
     gap: 40px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
   
     background-image: url('../../../public/images/bgdz.png');
@@ -13,8 +13,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
-    height: 500px; /* Standaard vaste hoogte */
-    min-height: 500px;
+    height: 510px; /* Standaard vaste hoogte */
+    min-height: 510px;
   }
   
   .cards {
@@ -22,7 +22,7 @@
     grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
     gap: 20px; /* Ruimte tussen de kaarten */
     width: 50%; /* Cards nemen 50% van de breedte */
-    padding-top: 2%;
+    padding-top: 15px;
 
   }
   
