@@ -18,6 +18,7 @@
     width: 500px;
     height: 400px;
     object-fit: cover;
+    border-radius: 2%;
     z-index: 10;
     margin: 0 auto; // Centreer afbeelding horizontaal
     display: block;
@@ -37,6 +38,7 @@
     height: 200px;
     background-color: #EEEEEE;
     opacity: 0.9;
+    border-radius: 2%;
     position: absolute; // Zorgt voor overlap
     transform: translate(50%, -50%); // Centreer de kaart exact
     z-index: 11; // Zorg dat deze boven de afbeelding staat
