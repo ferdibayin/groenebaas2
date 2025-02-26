@@ -1,30 +1,76 @@
 .embla {
-    margin: auto;
-    // --slide-height: 19rem;
-    // --slide-spacing: 1rem;
-    // --slide-size: 100%;
+  position: relative;
+  width: 100%;
+  height: 80vh; // Zorgt ervoor dat de carrousel de volledige hoogte vult
+  margin: 0; // Verwijder alle marges als er een ruimte is tussen header en carrousel
 }
 
 .embla__viewport {
-    overflow: hidden;
-    border-style: solid;
-    margin-top: 40px;
- 
-  }
-  .embla__container {
-    display: flex;
-    height: 600px;
-    width: 100%;
-    
-  }
-  .embla__slide {
-    flex: 0 0 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
- 
+  overflow: hidden;
+  height: 100%; // Zorgt ervoor dat de afbeeldingen de hele hoogte gebruiken
+  border-radius: 0; // Zorgt ervoor dat de bovenkant strak tegen de header zit
+}
 
+.embla__container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
 
+.embla__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; // Afbeelding vult de hele hoogte
+}
+
+.embla__slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; // Zorgt ervoor dat de afbeelding de hele viewport vult
+}
+
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 35px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.embla__prev {
+  left: 10px;
+}
+
+.embla__next {
+  right: 10px;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.embla__dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.embla__dot.active {
+  background: black;
+}

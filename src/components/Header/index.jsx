@@ -24,15 +24,15 @@ const Navbar = () => {
         <ul className={`${styles.navMenu} ${menuOpen ? styles.showMenu : ''}`}>
         
           <li className={styles.navItem}>
-            <Link href="/">Producten</Link>
+            <Link href="/">Bestellen</Link>
             <ul className={styles.dropdownMenu}>
               <li><Link href="/product1">🔹 PVC-Ramen</Link></li>
               <li><Link href="/product2">🔹 Aluminium Ramen</Link></li>
               <li><Link href="/product3">🔹 Houten Ramen</Link></li>
             </ul>
           </li>
-          <li className={styles.navItem}><Link href="/">Duurzaamheid</Link></li>
-          <li className={styles.navItem}><Link href="/">Over ons</Link></li>
+          <li className={styles.navItem}><Link href="/">Subsidie</Link></li>
+          <li className={styles.navItem}><Link href="/">Professional</Link></li>
           <li className={styles.navItem}><Link href="/">Contact</Link></li>
         </ul>
       </nav>
