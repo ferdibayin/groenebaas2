@@ -11,12 +11,12 @@ const Navbar = () => {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-[#001F3E]">
-      <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between px-4 py-3">
+      <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between p-3">
         <Link href="/" className="flex items-center">
           <Image
             src={Logo}
             alt="Groene Baas Logo"
-            className="h-auto w-[200px]"
+            className="h-auto w-auto"
             priority
           />
         </Link>
